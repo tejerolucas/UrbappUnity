@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urbapp.CSharp", "Urbapp.CSharp.csproj", "{D51EB538-0496-F0E7-B768-718014415AE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urbapp.CSharp.Editor", "Urbapp.CSharp.Editor.csproj", "{3D4575C8-E666-9A49-4C45-2E3A73C19CD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D51EB538-0496-F0E7-B768-718014415AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51EB538-0496-F0E7-B768-718014415AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51EB538-0496-F0E7-B768-718014415AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51EB538-0496-F0E7-B768-718014415AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4575C8-E666-9A49-4C45-2E3A73C19CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4575C8-E666-9A49-4C45-2E3A73C19CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4575C8-E666-9A49-4C45-2E3A73C19CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4575C8-E666-9A49-4C45-2E3A73C19CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
