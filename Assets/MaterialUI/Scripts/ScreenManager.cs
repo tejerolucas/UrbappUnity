@@ -27,11 +27,13 @@ namespace MaterialUI
 
 		public void Set(int index)
 		{
-			screens[index].transform.SetAsLastSibling();
+			if(currentScreen!=screens[index]){
+				screens[index].transform.SetAsLastSibling();
 
-			screens[index].Show(currentScreen);
-			lastScreen = currentScreen;
-			currentScreen = screens[index];
+				screens[index].Show(currentScreen);
+				lastScreen = currentScreen;
+				currentScreen = screens[index];
+			}
 		}
 
 		public void Set(string name)
