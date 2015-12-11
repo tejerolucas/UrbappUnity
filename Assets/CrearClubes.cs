@@ -18,9 +18,5 @@ public class CrearClubes : MonoBehaviour {
 			}
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
