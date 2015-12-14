@@ -73,7 +73,6 @@ namespace MaterialUI
 			toggle = gameObject.GetComponent<Toggle>();
 			checkRectTransform = checkImage.GetComponent<RectTransform>();
 			frameCanvasGroup = frameImage.GetComponent<CanvasGroup>();
-			checkBoxToggler = text.GetComponent<CheckBoxToggler>();
 			rippleConfig = gameObject.GetComponent<RippleConfig>();
 		}
 
@@ -112,7 +111,6 @@ namespace MaterialUI
 
 			currentCheckSize = checkRectTransform.localScale.x;
 			currentColor = frameImage.color;
-			currentTextColor = text.color;
 			currentFrameAlpha = frameCanvasGroup.alpha;
 
 			animStartTime = Time.realtimeSinceStartup;
@@ -147,7 +145,6 @@ namespace MaterialUI
 
 			currentCheckSize = checkRectTransform.localScale.x;
 			currentColor = frameImage.color;
-			currentTextColor = text.color;
 			currentFrameAlpha = frameCanvasGroup.alpha;
 
 			animStartTime = Time.realtimeSinceStartup;
@@ -216,8 +213,6 @@ namespace MaterialUI
 					frameImage.color = Anim.Quint.SoftOut(currentColor, onColor, animDeltaTime, animationDuration);
 					frameCanvasGroup.alpha = Anim.Cube.SoftOut(currentFrameAlpha, 0f, animDeltaTime, animationDuration);
 
-					if (changeTextColor)
-						text.color = Anim.Quint.SoftOut(currentTextColor, onColor, animDeltaTime, animationDuration);
 
 					if (changeRippleColor)
 						rippleConfig.rippleColor = frameImage.color;
@@ -228,8 +223,6 @@ namespace MaterialUI
 					frameImage.color = onColor;
 					frameCanvasGroup.alpha = 0f;
 
-					if (changeTextColor)
-						text.color = onColor;
 
 					if (changeRippleColor)
 						rippleConfig.rippleColor = onColor;
@@ -246,8 +239,7 @@ namespace MaterialUI
 					frameImage.color = Anim.Sept.InOut(currentColor, offColor, animDeltaTime, animationDuration * 0.75f);
 					frameCanvasGroup.alpha = Anim.Sept.InOut(currentFrameAlpha, 1f, animDeltaTime, animationDuration * 0.75f);
 
-					if (changeTextColor)
-						text.color = Anim.Quint.SoftOut(currentTextColor, textNormalColor, animDeltaTime, animationDuration * 0.75f);
+
 
 					if (changeRippleColor)
 						rippleConfig.rippleColor = frameImage.color;
@@ -258,8 +250,7 @@ namespace MaterialUI
 					frameImage.color = offColor;
 					frameCanvasGroup.alpha = 1f;
 					
-					if (changeTextColor)
-						text.color = textNormalColor;
+		;
 
 					if (changeRippleColor)
 						rippleConfig.rippleColor = offColor;

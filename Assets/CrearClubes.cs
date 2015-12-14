@@ -7,7 +7,7 @@ public class CrearClubes : MonoBehaviour {
 	public GameObject club;
 	void Start () {
 		string[] lineas=Directory.GetFiles(Application.dataPath+"/Equipos");
-
+		string clubes="";
 		foreach(string st in lineas){
 			if(st.Contains(".meta")){
 				GameObject go= Instantiate(club)as GameObject;
@@ -15,8 +15,10 @@ public class CrearClubes : MonoBehaviour {
 				ClubPropieties clubp=go.GetComponent<ClubPropieties>();
 				string ass=Path.GetFileName(st);
 				clubp.nombre.text=ass.Remove((ass.Length-5),5);
+				clubes=clubes+","+clubp.nombre.text;
 			}
 		}
+		Debug.Log(clubes);
 	}
 
 }
