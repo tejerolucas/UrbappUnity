@@ -107,6 +107,7 @@ namespace MaterialUI
 
 		void Awake()
 		{
+			Debug.Log (this.gameObject.name);
 			theRectTransform = screenSpace.GetComponent<RectTransform>();
 			theCanvasGroup = screenSpace.GetComponent<CanvasGroup>();
 			screenDimensions = new Vector2(Screen.width, Screen.height);
